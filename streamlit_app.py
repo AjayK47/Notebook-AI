@@ -52,7 +52,7 @@ class NotebookDocumenter:
             return response.choices[0].message.content.strip()
         except Exception as e:
             return f"# Jupyter Notebook Documentation\n\n*Error generating overview: {str(e)}*"
-
+ 
     def generate_cell_doc(self, cell_content: str, full_context: str) -> str:
         """Generate natural documentation for a code cell"""
         if not cell_content.strip():
