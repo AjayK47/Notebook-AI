@@ -4,7 +4,7 @@ from groq import Groq
 import os
 from typing import List, Dict
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv() 
 
 class NotebookDocumenter:
     def __init__(self, api_key: str):
